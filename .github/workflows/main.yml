@@ -14,4 +14,4 @@ jobs:
         server: free2.zikum.cz
         username: bananovarepublika.webowna.cz
         password: ${{ secrets.ftp_password }}
-    - server-dir: /public_html/
+        server-dir: /public_html/
