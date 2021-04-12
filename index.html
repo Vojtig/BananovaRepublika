@@ -44,20 +44,7 @@
 </p>
 </body>
 <script src="app.js"></script>
-<script type="text/javascript"> 
-    function display_c(){
-    var refresh=1000;
-    mytime=setTimeout('display_ct()',refresh)
-    }
-    
-    function display_ct() {
-    var x = new Date()
-    document.getElementById('ct').innerHTML = x;
-    display_c();
-     }
-</script>
 <footer onload=display_ct();>
-<p>Datum a čas: <span id="ct"></span></p>
 <p><noscript>Ke správnému zobrazení stránky je potřeba JavaScript.</noscript></p>
 </footer>
 </html>
