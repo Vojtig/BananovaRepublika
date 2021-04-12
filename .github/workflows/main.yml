@@ -1,5 +1,4 @@
-on: push
-name: 🚀 Deploy website on push
+name: Deploy website on push
 jobs:
   web-deploy:
     name: Deploy
@@ -11,6 +10,6 @@ jobs:
     - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        server: free2.zikum.cz
-        username: bananovarepublika.webowna.cz
-        password: DEv34s7.t(S3qT
+        server: ftp.samkirkland.com
+        username: myFtpUserName
+        password: ${{ secrets.ftp_password }}
