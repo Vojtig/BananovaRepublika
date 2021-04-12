@@ -44,11 +44,11 @@
 </p>
 </body>
 <script src="app.js"></script>
-<footer>
-<p onload=display_ct();>Datum a čas: <span id="ct"></span>
+<footer onload=display_ct();>
+<p>Datum a čas: <span id="ct"></span>
     <script type="text/javascript"> 
         function display_c(){
-        var refresh=1000; // Refresh rate in milli seconds
+        var refresh=1000;
         mytime=setTimeout('display_ct()',refresh)
         }
         
