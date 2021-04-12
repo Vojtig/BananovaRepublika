@@ -45,21 +45,18 @@
 </body>
 <script src="app.js"></script>
 <footer>
-<p>Datum a čas: <span id="datetime"></span>
-    <script>
-        function display_c() {
-            var refresh = 1000; // Refresh rate in milli seconds
-            mytime = setTimeout('display_ct()', refresh)
+<p onload=display_ct();>Datum a čas: <span id="ct"></span>
+    <script type="text/javascript"> 
+        function display_c(){
+        var refresh=1000; // Refresh rate in milli seconds
+        mytime=setTimeout('display_ct()',refresh)
         }
-
+        
         function display_ct() {
-            var strcount
-            var x = new Date();
-            var x1 = x.getDate() + 1 + "/" + x.getMonth() + "/" + x.getYear();
-            x1 = x1 + " - " + x.getHours( ) + ":" + x.getMinutes() + ":" + x.getSeconds();
-            document.getElementById('ct').innerHTML = x1;
-            tt = display_c();
-        }
+        var x = new Date()
+        document.getElementById('ct').innerHTML = x;
+        display_c();
+         }
     </script>
 </p>
 <p><noscript>Ke správnému zobrazení stránky je potřeba JavaScript.</noscript></p>
