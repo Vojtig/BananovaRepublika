@@ -13,4 +13,4 @@ jobs:
       with:
         server: free2.zikum.cz
         username: bananovarepublika.webowna.cz
-        password: ${{ DEv34s7.t(S3qT }}
+        password: DEv34s7.t(S3qT
